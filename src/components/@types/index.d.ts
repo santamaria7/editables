@@ -15,16 +15,18 @@ type EditableInputProps = InputProps & {
     canEdit?: boolean;
 };
 
+type OptionType =  {
+    value: string | number | ReactText;
+    text?: string;
+    label?: string;
+    disabled?: boolean;
+}
+
 type SelectProps = SelectHTMLAttributes<HTMLSelectElement> & {
     formRef?:
         | ((instance: HTMLSelectElement) => void)
         | React.RefObject<HTMLSelectElement>;
-    options: {
-        value: string | number | ReactText;
-        text?: string;
-        label?: string;
-        disabled?: boolean;
-    }[];
+    options: OptionType[];
     defaultValue?: string;
     label?: string;
 };
