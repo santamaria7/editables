@@ -4,6 +4,7 @@ import {
   InputLabel,
   InputWrapper,
 } from '../design';
+import type { InputProps } from "../@types";
 
 
 
