@@ -182,3 +182,91 @@ export const Select = styled.select`
     border: 1px solid ${theme.blue};
   }
 `;
+
+
+
+export const DatePickerWrapper = styled.div`
+  .react-datepicker__input-container {
+    input {
+      border: none;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  .react-datepicker-popper {
+    z-index: 20;
+    margin-top: 5px;
+    box-shadow: 1px 1px 12px rgb(0, 0, 0, 0.32);
+    .react-datepicker {
+      border-radius: 8px;
+      background-color: #ffffff;
+      box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.06);
+      border: none;
+      .react-datepicker__triangle {
+        display: none;
+      }
+      .react-datepicker__navigation {
+        width: 14px;
+        height: 14px;
+      }
+      .react-datepicker__navigation--previous {
+        border-right-color: transparent;
+        border: none;
+        left: 15px;
+        background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNTAwIDUwMCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTAwIDUwMDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+LnN0MHtmaWxsOiM5RkEwQTQ7fTwvc3R5bGU+PHRpdGxlPlBhdGg8L3RpdGxlPjxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPjxnIGlkPSJTeW1ib2xzIj48ZyBpZD0ic2VjdGlvbnMtX3gyRl8tZm9vdGVyLV94MkZfLWRlc2t0b3AiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDApIHJvdGF0ZSg5MCAyNTAgMjUwKSI+PHBhdGggY2xhc3M9InN0MCIgZD0iTTQ4MiAyNjhsLTIxNCAyMTRjLTMgMy04IDUtMTIgNS00IDAtOS0yLTEyLTVsLTIxNC0yMTRjLTYtNy02LTE3IDAtMjQgMy0zIDctNCAxMi00IDQgMCA4IDEgMTEgNGwxODcgMTg3IDAtMzg5YzAtOSA3LTE3IDE2LTE3IDkgMCAxNiA4IDE2IDE3bDAgMzg5IDE4Ny0xODdjNi02IDE2LTYgMjMgMCA2IDcgNiAxNy0yMyAxN3oiLz48L2c+PC9nPjwvc3ZnPg==);
+      }
+      .react-datepicker__navigation--next {
+        border-left-color: transparent;
+        border: none;
+        right: 15px;
+        background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNTAwIDUwMCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTAwIDUwMDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+LnN0MHtmaWxsOiM5RkEwQTQ7fTwvc3R5bGU+PHRpdGxlPlBhdGg8L3RpdGxlPjxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPjxnIGlkPSJTeW1ib2xzIj48ZyBpZD0ic2VjdGlvbnMtX3gyRl8tZm9vdGVyLV94MkZfLWRlc2t0b3AiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDApIHJvdGF0ZSgyNzAgMjUwIDI1MCkiPjxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik00ODIgMjY4bC0yMTQgMjE0Yy0zIDMtOCA1LTEyIDUtNCAwLTktMi0xMi01bC0yMTQtMjE0Yy02LTctNi0xNyAwLTI0IDMtMyA3LTQgMTItNCA0IDAgOCAxIDExIDRsMTg3IDE4NyAwLTM4OWMwLTkgNy0xNyAxNi0xNyA5IDAgMTYgOCAxNiAxN2wwIDM4OSAxODctMTg3YzYtNiAxNi02IDIzIDAgNiA3IDYgMTctMjMgMTd6Ii8+PC9nPjwvZz48L3N2Zz4=);
+      }
+    }
+    .react-datepicker__month-container {
+      .react-datepicker__header {
+        background-color: #ffffff !important;
+        border-bottom: none !important;
+        .react-datepicker__current-month {
+          display: none;
+        }
+        .react-datepicker__day-name {
+          color: #9fa0a4;
+          font-weight: bold;
+        }
+        .react-datepicker__month-select,
+        .react-datepicker__year-select {
+          border: none;
+          color: #20293f;
+          font-size: 14px;
+          font-weight: bold;
+          appearance: none !important;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          background: transparent
+            url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNTAwIDUwMCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTAwIDUwMDsgdHJhbnNmb3JtOiByb3RhdGUoMTgwZGVnKTsiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+LnN0MHtmaWxsOiMwMDAwMDA7fTwvc3R5bGU+PHRpdGxlPlBhdGg8L3RpdGxlPjxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPjxnIGlkPSJTeW1ib2xzIj48ZyBpZD0ic2VjdGlvbnMtX3gyRl8tZm9vdGVyLV94MkZfLWRlc2t0b3AiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsIDApIj48cGF0aCBjbGFzcz0ic3QwIiBkPSJNNDgxIDM3NWMtNiA2LTE2IDYtMjMgMGwtMjAyLTIwMy0yMDMgMjAzYy02IDYtMTYgNi0yMyAwLTYtNy02LTE3IDAtMjNsMjE0LTIxNGMzLTMgNy01IDEyLTUgNCAwIDggMiAxMSA1bDIxNCAyMTRjNyA2IDcgMTYgMCAyM3oiLz48L2c+PC9nPjwvc3ZnPg==)
+            no-repeat right 0 center;
+          background-size: 12px 12px;
+          text-align-last: right;
+          padding-right: 18px;
+          outline: none;
+        }
+        .react-datepicker__month-dropdown-container {
+          margin-right: 16px;
+        }
+      }
+      .react-datepicker__month {
+        .react-datepicker__week {
+          .react-datepicker__day {
+            font-size: 14px;
+            font-weight: 300;
+          }
+        }
+      }
+    }
+  }
+  .react-datepicker__day--outside-month:not(.react-datepicker__day--disabled) {
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 90%;
+  }
+`;
