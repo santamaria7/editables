@@ -6,9 +6,9 @@ import {
   EditableLabel,
   EditableWrapper,
   EditButton,
-} from '../design';
-import SelectComponent from '../SelectComponent';
-import { EditableSelectProps } from "../@types";
+} from '../../design';
+import SelectComponent from '../../SelectComponent';
+import { EditableSelectProps } from "../../@types";
 
 
 

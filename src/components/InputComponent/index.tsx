@@ -3,12 +3,10 @@ import "../design/styles.scss";
 import type { InputProps } from "../@types";
 
 const InputComponent: React.FC<InputProps> = (props) => {
-  const { label, formRef, inline, wrapperClassName, ...otherProps } = props;
+  const { label, formRef, inline, ...otherProps } = props;
   return (
     <div
-      className={`input-wrapper ${inline ? "inline" : ""} ${
-        wrapperClassName || ""
-      }`}
+      className={`input-wrapper ${inline ? "inline" : ""}`}
     >
       {label && (
         <label

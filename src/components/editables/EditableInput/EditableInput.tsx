@@ -1,15 +1,6 @@
 import React, { useState } from 'react';
-import {
-  CancelButton,
-  ConfirmButton,
-  ConfirmCancelWrapper,
-  EditableLabel,
-  EditableWrapper,
-  EditBox,
-  EditButton,
-  EditableInputWrapper,
-} from '../design';
-import type { EditableInputProps } from "../@types";
+import '../design/styles.scss';
+import type { EditableInputProps } from "../../@types";
 
 
 
@@ -38,10 +29,11 @@ const EditableInput: React.FC<EditableInputProps> = (props) => {
   };
 
   return (
-    <EditableInputWrapper>
-      <EditableWrapper className={toggle ? 'focused' : undefined}>
-        {label && <EditableLabel>{label}:</EditableLabel>}
-        <EditBox
+    <div className="edit-box-wrapper">
+      <div className={`editable-wrapper ${toggle ? 'focused' : ''}`}>
+        {label && <label className="editable-label">{label}:</label>}
+        <input
+            className="edit-box"
           {...otherProps}
           ref={formRef}
           readOnly={!toggle}
@@ -49,28 +41,28 @@ const EditableInput: React.FC<EditableInputProps> = (props) => {
             setValue(e.target.value);
           }}
         />
-        <ConfirmCancelWrapper className={toggle ? 'show' : 'hide'}>
-          <ConfirmButton
+        <div className={`confirmCancelWrapper ${toggle ? 'show' : 'hide'}`}>
+          <button
             onClick={confirm}
             type="submit"
-            className={'icon icon-correct'}
+            className="confirm-button"
           />
-          <CancelButton
+          <button
             onClick={cancel}
             type="button"
-            className={'icon icon-cancel'}
+            className="cancel-button"
           />
-        </ConfirmCancelWrapper>
-      </EditableWrapper>
+        </div>
+      </div>
       {!toggle && (
-        <EditButton
+        <button
           onClick={toggleConfirmCancel}
-          className="icon icon-edit"
+          className="edit-button"
           type="button"
           disabled={!canEdit}
         />
       )}
-    </EditableInputWrapper>
+    </div>
   );
 };
 

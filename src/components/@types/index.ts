@@ -6,7 +6,6 @@ export type InputProps =  InputHTMLAttributes<HTMLInputElement> & {
         | ((instance: HTMLInputElement) => void)
         | React.RefObject<HTMLInputElement>;
     inline?: boolean;
-    wrapperClassName?: string;
 };
 export type EditableInputProps = InputProps & {
     confirmAction?: Function;

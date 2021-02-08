@@ -1,0 +1,155 @@
+
+$black: #000;
+$white: #fff;
+$blue: #5f8cff;
+$green: #30ab3e;
+$red: #ff0000;
+
+%actionButton {
+  position: relative;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  margin: 0 auto 0 5px;
+  outline: none;
+  color: $blue;
+  background-color: transparent;
+  text-align: center;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.editable-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  transition: border-color 0.5s ease, padding 0.5s ease;
+
+  &.focused {
+    padding: 0 5px;
+    border: 1px solid $blue;
+  }
+
+  &.bordered {
+    border: 1px solid $blue;
+  }
+
+
+
+  // Date-picker
+  [class*="-Input"] {
+    padding: 0;
+    margin: 0;
+
+    input {
+      box-sizing: border-box;
+      margin: 0;
+
+      &[disabled] {
+        border: none !important;
+        background: none !important;
+      }
+    }
+  }
+}
+
+.editable-label {
+  color: $blue;
+  margin-right: 5px;
+  height: 30px;
+  line-height: 32px;
+  min-width: 80px;
+  margin-bottom: 0;
+  font-size:12px;
+}
+
+.edit-box {
+  border: none;
+  background: none;
+  outline: none;
+  height: 30px;
+  line-height: 2.1;
+  width: 90%;
+
+  &.edit {
+    padding: 5px;
+    border: 1px solid $blue;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.confirmCancelWrapper {
+  &.show {
+    display: flex;
+    align-items: center;
+  }
+
+  &.hide {
+    display: none;
+  }
+}
+
+.edit-button {
+  @extend %actionButton;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  align-self: center;
+  background: url(/assets/edit.svg) no-repeat center center;
+  background-size: 16px 16px;
+}
+
+.confirm-button {
+  @extend %actionButton;
+  background: none;
+  font-size: 17px !important;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 7px;
+    width: 15px;
+    transform: translate(-50%, -110%) rotate(-45deg);
+    display: inline-block;
+    border-left: 2px solid $blue;
+    border-bottom: 2px solid $blue;
+  }
+}
+
+.cancel-button {
+  @extend %actionButton;
+  background: none;
+  font-size: 14px !important;
+
+  &:before {
+    content: "+";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 15px;
+    width: 15px;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    display: inline-block;
+    font-size: 30px;
+    line-height: 15px;
+  }
+}
+
+.edit-box-wrapper {
+  margin: 0.625rem 0 0;
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+}

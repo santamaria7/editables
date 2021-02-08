@@ -5,10 +5,10 @@ import {
   EditableLabel,
   EditableWrapper,
   EditButton,
-} from '../design';
+} from '../../design';
 import { parseISO } from 'date-fns';
-import DatePickerComponent from '../DatePickerComponent';
-import { DatePickerProps } from "../@types";
+import DatePickerComponent from '../../DatePickerComponent';
+import { DatePickerProps } from "../../@types";
 
 
 
