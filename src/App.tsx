@@ -1,18 +1,29 @@
-import React from "react";
+import React, { useMemo } from "react";
 import "./App.css";
-import InputComponent from "./components/InputComponent";
 import EditableInput from "./components/editables/EditableInput/EditableInput";
+import EditableSelect from "./components/editables/EditableSelect";
 
 function App() {
+  const options = useMemo(() => {
+    return [
+      {
+        value: "Female",
+        label: "Female",
+      },
+      {
+        value: "Male",
+        label: "Male",
+      },
+    ];
+  }, []);
   return (
     <div className="App">
       <main>
         <form>
-          <InputComponent label="test input 1" />
-          <InputComponent label="test input 2" inline />
-          <InputComponent placeholder="test input 3" />
-          <EditableInput label="Your Name" defaultValue="Marzieh"/>
-            <EditableInput defaultValue="Marzieh" />
+
+          <EditableInput label="Your Name" defaultValue="Marzieh" />
+          <EditableInput defaultValue="Marzieh" />
+          <EditableSelect options={options} label="Gender" />
         </form>
       </main>
     </div>
