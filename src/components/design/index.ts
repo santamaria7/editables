@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
 const theme = {
-    black: '#000',
-    white: '#fff',
-    blue: '#5f8cff',
-    green: '#30ab3e',
-    red: '#ff0000',
+  black: "#000",
+  white: "#fff",
+  blue: "#5f8cff",
+  green: "#30ab3e",
+  red: "#ff0000",
 };
 
 const ActionButton = styled.button`
@@ -42,9 +42,9 @@ export const EditableWrapper = styled.div`
   }
   label {
     margin-bottom: 0;
-  } 
+  }
   // Date-picker
-  [class*='-Input'] {
+  [class*="-Input"] {
     padding: 0;
     margin: 0;
     input {
@@ -56,7 +56,6 @@ export const EditableWrapper = styled.div`
       }
     }
   }
-  
 `;
 export const EditableLabel = styled.label`
   color: ${theme.blue};
@@ -100,7 +99,7 @@ export const ConfirmButton = styled(ActionButton)`
   background: none;
   font-size: 17px !important;
   &:before {
-    content: '';
+    content: "";
     position: absolute;
     top: 50%;
     left: 50%;
@@ -123,42 +122,6 @@ export const EditableInputWrapper = styled.div`
   justify-content: start;
   flex-wrap: wrap;
 `;
-export const InputWrapper = styled.div`
-  position: relative;
-  padding-top: 15px;
-  &.inline {
-    display: flex;
-  }
-`;
-export const InputLabel = styled.label`
-  padding: 0 5px;
-  text-transform: uppercase;
-  font-size: 10px !important;
-  position: absolute;
-  top: 8px;
-  left: 15px;
-  margin: 0;
-  z-index: 1;
-  &.inline {
-    position: relative;
-    top: initial;
-    left: initial;
-    background: initial;
-    text-transform: initial;
-  }
-  `;
-export const Input = styled.input`
-  width: 100%;
-  height: 40px;
-  padding: 5px;
-  border-radius: 5px;
-  background: #ffffff !important;
-  border: 1px solid ${theme.blue};
-  &.error {
-    outline: transparent;
-    border: 1px solid red;
-  }
-  `;
 
 export const SelectWrapper = styled.div`
   flex-direction: column;
@@ -182,8 +145,6 @@ export const Select = styled.select`
     border: 1px solid ${theme.blue};
   }
 `;
-
-
 
 export const DatePickerWrapper = styled.div`
   .react-datepicker__input-container {

@@ -1,28 +1,24 @@
-import React from 'react';
-import {
-  Input,
-  InputLabel,
-  InputWrapper,
-} from '../design';
+import React from "react";
+import "../design/styles.scss";
 import type { InputProps } from "../@types";
-
-
 
 const InputComponent: React.FC<InputProps> = (props) => {
   const { label, formRef, inline, wrapperClassName, ...otherProps } = props;
   return (
-    <InputWrapper
-      className={`input-wrapper ${inline ? 'inline' : ''} ${
-        wrapperClassName || ''
+    <div
+      className={`input-wrapper ${inline ? "inline" : ""} ${
+        wrapperClassName || ""
       }`}
     >
       {label && (
-        <InputLabel className={`${props.className} ${inline ? 'inline' : ''}`}>
+        <label
+          className={`input-label ${props.className} ${inline ? "inline" : ""}`}
+        >
           {label}
-        </InputLabel>
+        </label>
       )}
-      <Input {...otherProps} ref={formRef} />
-    </InputWrapper>
+      <input className="input" {...otherProps} ref={formRef} />
+    </div>
   );
 };
 

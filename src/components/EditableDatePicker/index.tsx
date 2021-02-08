@@ -35,7 +35,7 @@ const EditableDatePicker: React.FC<DatePickerProps> = (props) => {
     // canEdit is defined by permissions of the logged-in admin user
     if (canEdit) {
       setEditable(true);
-      pickerRef.current!.input?.focus();
+     // pickerRef.current!.input?.focus();
     }
   };
 
