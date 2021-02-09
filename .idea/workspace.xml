@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="937bcb01-41c8-4b4e-ad7c-e9aed0a32f94" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/editables/design/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/editables/design/styles.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +83,7 @@
       <option name="presentableId" value="Default" />
       <updated>1611257554089</updated>
       <workItem from="1611257555303" duration="5511000" />
-      <workItem from="1612790115921" duration="17981000" />
+      <workItem from="1612790115921" duration="18280000" />
     </task>
     <task id="LOCAL-00001" summary="project initiated">
       <created>1611257862039</created>
@@ -207,7 +204,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612850806154</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="fixed the style of the example form">
+      <created>1612852366072</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1612852366073</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -231,14 +235,15 @@
     <MESSAGE value="extracted the common parts as EditableWrapper" />
     <MESSAGE value="added InputComponent back. fixed types" />
     <MESSAGE value="removed StyledComponents and other unused packages" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed StyledComponents and other unused packages" />
+    <MESSAGE value="fixed the style of the example form" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed the style of the example form" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="503" y="60" key="CommitChangelistDialog2" timestamp="1612850806026">
+    <state x="503" y="60" key="CommitChangelistDialog2" timestamp="1612852365962">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
     <state x="-1417" y="60" key="CommitChangelistDialog2/-1920.25.1920.992/0.25.1920.1055@-1920.25.1920.992" timestamp="1611262457807" />
-    <state x="503" y="60" key="CommitChangelistDialog2/1920.25.1920.1055/0.25.1920.992@0.25.1920.992" timestamp="1612850806026" />
+    <state x="503" y="60" key="CommitChangelistDialog2/1920.25.1920.1055/0.25.1920.992@0.25.1920.992" timestamp="1612852365962" />
     <state x="196" y="116" key="DiffContextDialog" timestamp="1612793157001">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
@@ -263,11 +268,11 @@
       <screen x="0" y="25" width="1920" height="992" />
     </state>
     <state x="360" y="69" key="SettingsEditor/1920.25.1920.1055/0.25.1920.992@0.25.1920.992" timestamp="1612791097688" />
-    <state x="460" y="186" key="Vcs.Push.Dialog.v2" timestamp="1612850807853">
+    <state x="460" y="186" key="Vcs.Push.Dialog.v2" timestamp="1612852367633">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
     <state x="-1460" y="186" key="Vcs.Push.Dialog.v2/-1920.25.1920.992/0.25.1920.1055@-1920.25.1920.992" timestamp="1611262459301" />
-    <state x="460" y="186" key="Vcs.Push.Dialog.v2/1920.25.1920.1055/0.25.1920.992@0.25.1920.992" timestamp="1612850807853" />
+    <state x="460" y="186" key="Vcs.Push.Dialog.v2/1920.25.1920.1055/0.25.1920.992@0.25.1920.992" timestamp="1612852367633" />
     <state x="100" y="125" width="1720" height="792" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1612805593947">
       <screen x="0" y="25" width="1920" height="992" />
     </state>

@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from "react";
+import React, { FormEvent, useMemo, useState } from "react";
 import "./App.css";
 import EditableInput from "./components/editables/EditableInput/EditableInput";
 import EditableSelect from "./components/editables/EditableSelect";
@@ -25,18 +25,29 @@ function App() {
     return {
       name: "Marzieh",
       age: "32",
-      favoriteColor: "#ffbb22",
+      color: "#ffbb22",
       gender: "F",
     };
   }, []);
   const [name, setName] = useState(userData.name);
   const [age, setAge] = useState(userData.age);
-  const [color, setColor] = useState(userData.favoriteColor);
+  const [color, setColor] = useState(userData.color);
   const [gender, setGender] = useState(userData.gender);
+  const onSubmit = (e: FormEvent) => {
+    e.preventDefault();
+    const payload = {
+      name,
+      age,
+      color,
+      gender,
+    };
+    console.log(payload);
+    alert("Successfully Saved");
+  };
   return (
     <div className="App">
       <main>
-        <form>
+        <form onSubmit={onSubmit}>
           <h1>Client's Profile</h1>
           <EditableInput
             label="Name"
