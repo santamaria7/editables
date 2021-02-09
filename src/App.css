@@ -1,9 +1,32 @@
 main {
-  width:100%;
+  width: 100%;
   max-width: 600px;
   margin: 0 auto;
+  padding: 30px 0;
 }
 form {
-  width:300px;
-  margin:0 auto;
+  width: 300px;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 22px;
+  text-align: center;
+}
+button[type="submit"] {
+  display: block;
+  width: 120px;
+  height: 35px;
+  margin: 15px auto;
+  background: #2f5189;
+  border: #2f5189;
+  color: #fff;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+  box-shadow: 0 1px 11px 0 rgba(0, 0, 0, 0.29);
+  transition: all ease 0.3s;
+}
+button[type="submit"]:focus {
+  background: #a5bbe1;
+  border: #a5bbe1;
 }

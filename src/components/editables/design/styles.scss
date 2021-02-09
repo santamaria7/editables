@@ -25,7 +25,7 @@ $red: #ff0000;
 
 .editable-wrapper {
   display: flex;
-  align-items:center;
+  align-items: center;
   margin: 15px 0 0;
 }
 
@@ -45,29 +45,13 @@ $red: #ff0000;
   &.bordered {
     border: 1px solid $blue;
   }
-  // Date-picker
-  [class*="-Input"] {
-    padding: 0;
-    margin: 0;
-
-    input {
-      box-sizing: border-box;
-      margin: 0;
-
-      &[disabled] {
-        border: none !important;
-        background: none !important;
-      }
-    }
-  }
 }
 
 .editable-label {
-  margin-right: 5px;
+  margin: 0 5px 0 0;
   height: 30px;
   line-height: 32px;
   min-width: 80px;
-  margin-bottom: 0;
   font-size: 12px;
 }
 
@@ -75,8 +59,9 @@ $red: #ff0000;
   border: none;
   background: none;
   outline: none;
+  box-sizing: border-box;
   height: 30px;
-  line-height: 2.1;
+  line-height: 2;
   width: 90%;
 
   &.edit {
@@ -86,6 +71,9 @@ $red: #ff0000;
 
   &:focus {
     outline: none;
+  }
+  &[type="color"] {
+    width: 30px !important;
   }
 }
 

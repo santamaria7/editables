@@ -1,4 +1,4 @@
-import React, { useMemo } from "react";
+import React, { useMemo, useState } from "react";
 import "./App.css";
 import EditableInput from "./components/editables/EditableInput/EditableInput";
 import EditableSelect from "./components/editables/EditableSelect";
@@ -7,23 +7,60 @@ function App() {
   const options = useMemo(() => {
     return [
       {
-        value: "Female",
+        value: "default",
+        label: "-",
+      },
+      {
+        value: "F",
         label: "Female",
       },
       {
-        value: "Male",
+        value: "M",
         label: "Male",
       },
     ];
   }, []);
+  // In a real world example this data comes from the backend
+  const userData = useMemo(() => {
+    return {
+      name: "Marzieh",
+      age: "32",
+      favoriteColor: "#ffbb22",
+      gender: "F",
+    };
+  }, []);
+  const [name, setName] = useState(userData.name);
+  const [age, setAge] = useState(userData.age);
+  const [color, setColor] = useState(userData.favoriteColor);
+  const [gender, setGender] = useState(userData.gender);
   return (
     <div className="App">
       <main>
         <form>
-
-          <EditableInput label="Your Name" defaultValue="Marzieh" />
-          <EditableInput defaultValue="Marzieh" />
-          <EditableSelect options={options} label="Gender" />
+          <h1>Client's Profile</h1>
+          <EditableInput
+            label="Name"
+            defaultValue={name}
+            confirmAction={setName}
+          />
+          <EditableInput
+            label="Age"
+            defaultValue={age}
+            confirmAction={setAge}
+          />
+          <EditableInput
+            label="Favorite Color"
+            defaultValue={color}
+            type="color"
+            confirmAction={setColor}
+          />
+          <EditableSelect
+            label="Gender"
+            options={options}
+            defaultValue={gender}
+            confirmAction={setGender}
+          />
+          <button type="submit">Save Changes</button>
         </form>
       </main>
     </div>
