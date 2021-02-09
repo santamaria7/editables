@@ -1,20 +1,23 @@
 import React, { InputHTMLAttributes, ReactText, SelectHTMLAttributes } from "react";
 
-export type InputProps =  InputHTMLAttributes<HTMLInputElement> & {
+
+export type EditableInputProps = InputHTMLAttributes<HTMLInputElement> & {
     label?: string;
     formRef?:
         | ((instance: HTMLInputElement) => void)
         | React.RefObject<HTMLInputElement>;
-    inline?: boolean;
-};
-export type EditableInputProps = InputProps & {
     confirmAction?: Function;
     cancelAction?: Function;
     disabled?: boolean;
     canEdit?: boolean;
 };
+export type InputProps = InputHTMLAttributes<HTMLInputElement> & {
+    ref?:
+        | ((instance: HTMLInputElement) => void)
+        | React.RefObject<HTMLInputElement>;
+}
 
-type OptionType =  {
+    type OptionType =  {
     value: string | number | ReactText;
     text?: string;
     label?: string;
@@ -33,17 +36,4 @@ export type SelectProps = SelectHTMLAttributes<HTMLSelectElement> & {
 export type EditableSelectProps = SelectProps & {
     confirmAction?: Function;
     cancelAction?: Function;
-};
-
-export type DatePickerProps = {
-    label?: string;
-    confirmAction?: Function;
-    cancelAction?: Function;
-    disabled?: boolean;
-    maxDate?: number;
-    name?: string;
-    defaultValue?: string;
-    placeholder: string;
-    minDate?: number;
-    canEdit?: boolean;
 };

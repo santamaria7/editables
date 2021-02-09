@@ -2,6 +2,7 @@ import React from "react";
 import "../design/styles.scss";
 import type { EditableInputProps } from "../../@types";
 import EditableWrapper from "../EditableWrapper";
+import InputComponent from "../../InputComponent";
 
 const EditableInput: React.FC<EditableInputProps> = (props) => {
   const {
@@ -10,18 +11,19 @@ const EditableInput: React.FC<EditableInputProps> = (props) => {
     cancelAction,
     formRef,
     canEdit = true,
+    defaultValue,
+    value,
     ...otherProps
   } = props;
-
   return (
     <EditableWrapper
       label={label}
       confirmAction={confirmAction}
       cancelAction={cancelAction}
       canEdit={canEdit}
-      defaultValue={(otherProps.value || otherProps.defaultValue) as string}
+      defaultValue={(value || defaultValue) as string}
     >
-      <input className="edit-box" {...otherProps} ref={formRef} />
+      <InputComponent className="edit-box" {...otherProps} ref={formRef} />
     </EditableWrapper>
   );
 };

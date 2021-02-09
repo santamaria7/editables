@@ -1,21 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="937bcb01-41c8-4b4e-ad7c-e9aed0a32f94" name="Default Changelist" comment="base input component added">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/editables/EditableWrapper/index.tsx" afterDir="false" />
+    <list default="true" id="937bcb01-41c8-4b4e-ad7c-e9aed0a32f94" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/InputComponent/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/DatePickerComponent/index.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/InputComponent/index.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/design/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/design/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/design/styles.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/editables/EditableDatePicker/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/@types/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/@types/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/editables/EditableInput/EditableInput.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/editables/EditableInput/EditableInput.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/editables/EditableSelect/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/editables/EditableSelect/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/editables/design/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/editables/design/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/editables/EditableWrapper/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/editables/EditableWrapper/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +86,7 @@
       <option name="presentableId" value="Default" />
       <updated>1611257554089</updated>
       <workItem from="1611257555303" duration="5511000" />
-      <workItem from="1612790115921" duration="13008000" />
+      <workItem from="1612790115921" duration="15272000" />
     </task>
     <task id="LOCAL-00001" summary="project initiated">
       <created>1611257862039</created>
@@ -194,7 +186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612807037612</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="extracted the common parts as EditableWrapper">
+      <created>1612819709070</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1612819709071</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,14 +214,15 @@
     <MESSAGE value="replaced styled components with styles file. added examples for InputComponent" />
     <MESSAGE value="modified the readme.md file" />
     <MESSAGE value="fixed the UI of the EditableInput" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed the UI of the EditableInput" />
+    <MESSAGE value="extracted the common parts as EditableWrapper" />
+    <option name="LAST_COMMIT_MESSAGE" value="extracted the common parts as EditableWrapper" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="503" y="60" key="CommitChangelistDialog2" timestamp="1612807037476">
+    <state x="503" y="60" key="CommitChangelistDialog2" timestamp="1612819708938">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
     <state x="-1417" y="60" key="CommitChangelistDialog2/-1920.25.1920.992/0.25.1920.1055@-1920.25.1920.992" timestamp="1611262457807" />
-    <state x="503" y="60" key="CommitChangelistDialog2/1920.25.1920.1055/0.25.1920.992@0.25.1920.992" timestamp="1612807037476" />
+    <state x="503" y="60" key="CommitChangelistDialog2/1920.25.1920.1055/0.25.1920.992@0.25.1920.992" timestamp="1612819708938" />
     <state x="196" y="116" key="DiffContextDialog" timestamp="1612793157001">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
@@ -247,11 +247,11 @@
       <screen x="0" y="25" width="1920" height="992" />
     </state>
     <state x="360" y="69" key="SettingsEditor/1920.25.1920.1055/0.25.1920.992@0.25.1920.992" timestamp="1612791097688" />
-    <state x="460" y="186" key="Vcs.Push.Dialog.v2" timestamp="1612807040805">
+    <state x="460" y="186" key="Vcs.Push.Dialog.v2" timestamp="1612819715011">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
     <state x="-1460" y="186" key="Vcs.Push.Dialog.v2/-1920.25.1920.992/0.25.1920.1055@-1920.25.1920.992" timestamp="1611262459301" />
-    <state x="460" y="186" key="Vcs.Push.Dialog.v2/1920.25.1920.1055/0.25.1920.992@0.25.1920.992" timestamp="1612807040805" />
+    <state x="460" y="186" key="Vcs.Push.Dialog.v2/1920.25.1920.1055/0.25.1920.992@0.25.1920.992" timestamp="1612819715011" />
     <state x="100" y="125" width="1720" height="792" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1612805593947">
       <screen x="0" y="25" width="1920" height="992" />
     </state>

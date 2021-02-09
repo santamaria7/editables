@@ -25,7 +25,7 @@ const EditableWrapper: React.FC<WrapperType> = (props) => {
     label,
     confirmAction,
     cancelAction,
-      onChange,
+    onChange,
     canEdit = true,
     defaultValue,
     children,
@@ -49,8 +49,8 @@ const EditableWrapper: React.FC<WrapperType> = (props) => {
 
   const changeAction = (e: any) => {
     setValue(e.target.value);
-    onChange && onChange(e)
-  }
+    onChange && onChange(e);
+  };
 
   const childrenWithProps = React.Children.map(children, (child) => {
     // checking isValidElement is the safe way and avoids a typescript error too
@@ -61,7 +61,7 @@ const EditableWrapper: React.FC<WrapperType> = (props) => {
           onChange: changeAction,
           value,
           readOnly: !toggle, //TODO: fix it so it's just added to input
-          disabled: !toggle //TODO: fix it so it's just added to select
+          disabled: !toggle, //TODO: fix it so it's just added to select
           //TODO: Or find a better approach!
         }
       );
