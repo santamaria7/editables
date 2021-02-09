@@ -1,0 +1,26 @@
+$black: #000;
+$white: #fff;
+$blue: #5f8cff;
+$green: #30ab3e;
+$red: #ff0000;
+
+.select-wrapper {
+  display: flex;
+  position: relative;
+  select {
+    border: none;
+    min-width: 150px;
+    padding: 10px;
+    &:focus {
+      outline: none;
+    }
+    &.bordered {
+      border: 1px solid $blue;
+    }
+  }
+}
+
+.select-label{
+  margin-bottom: 0;
+  font-weight: bold;
+}

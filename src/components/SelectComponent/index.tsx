@@ -1,14 +1,14 @@
 import React from 'react';
-import { Label, Select, SelectWrapper } from "../design";
+import "./design/styles.scss";
 import { SelectProps } from "../@types";
 
 
 const SelectComponent: React.FC<SelectProps> = (props) => {
   const { label, formRef, options, defaultValue, ...otherProps } = props;
   return (
-    <SelectWrapper className="select-wrapper">
-      {label && <Label>{label}</Label>}
-      <Select {...otherProps} ref={formRef} defaultValue={defaultValue}>
+    <div className="select-wrapper">
+      {label && <label className="select-label">{label}</label>}
+      <select {...otherProps} ref={formRef} defaultValue={defaultValue}>
         {options.map((item, index) => (
           <option
             value={item.value}
@@ -22,8 +22,8 @@ const SelectComponent: React.FC<SelectProps> = (props) => {
             {item.text || item.label}
           </option>
         ))}
-      </Select>
-    </SelectWrapper>
+      </select>
+    </div>
   );
 };
 

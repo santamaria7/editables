@@ -27,7 +27,6 @@ const EditableSelect: React.FC<EditableSelectProps> = (props) => {
         formRef={formRef}
         options={options}
         {...otherProps}
-        defaultValue={defaultValue}
       />
     </EditableWrapper>
   );
