@@ -1,7 +1,7 @@
 import React from "react";
-import SelectComponent from "../../SelectComponent";
+import SelectComponent from "../../base/SelectComponent";
 import { EditableSelectProps } from "../../@types";
-import EditableWrapper from "../EditableWrapper";
+import EditableWrapper from "../../base/EditableWrapper";
 
 const EditableSelect: React.FC<EditableSelectProps> = (props) => {
   const {

@@ -1,8 +1,8 @@
 import React from "react";
 import "../design/styles.scss";
 import type { EditableInputProps } from "../../@types";
-import EditableWrapper from "../EditableWrapper";
-import InputComponent from "../../InputComponent";
+import EditableWrapper from "../../base/EditableWrapper";
+import InputComponent from "../../base/InputComponent";
 
 const EditableInput: React.FC<EditableInputProps> = (props) => {
   const {

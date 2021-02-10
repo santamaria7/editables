@@ -4,7 +4,7 @@ import React, {
   SelectHTMLAttributes,
   useState,
 } from "react";
-import "../design/styles.scss";
+import "../../editables/design/styles.scss";
 
 type EditableWrapperChild =
   | InputHTMLAttributes<HTMLInputElement>

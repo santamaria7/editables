@@ -1,6 +1,6 @@
 import React from 'react';
 import "./design/styles.scss";
-import { SelectProps } from "../@types";
+import { SelectProps } from "../../@types";
 
 
 const SelectComponent: React.FC<SelectProps> = (props) => {
