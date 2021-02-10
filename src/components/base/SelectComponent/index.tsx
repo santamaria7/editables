@@ -17,7 +17,7 @@ const SelectComponent: React.FC<SelectProps> = (props) => {
             //Although the browser shows errors and warnings on this,
             // removing it and doing what browser suggests is problematic
             // itself because the select won't show the value from the server
-            selected={item.value === defaultValue}
+            //selected={item.value === defaultValue}
           >
             {item.text || item.label}
           </option>

@@ -11,13 +11,14 @@ function App() {
         label: "-",
       },
       {
-        value: "F",
-        label: "Female",
-      },
-      {
         value: "M",
         label: "Male",
       },
+      {
+        value: "F",
+        label: "Female",
+      },
+
     ];
   }, []);
   // In a real world example this data comes from the backend
